@@ -2,11 +2,7 @@ import { config, fields, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'github',
-    repo: {
-      owner: 'epicyoung',
-      name: 'spindonesia',
-    },
+    kind: 'local',
   },
   collections: {
     posts: collection({

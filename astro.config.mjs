@@ -1,19 +1,10 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import markdoc from '@astrojs/markdoc';
-import keystatic from '@keystatic/astro';
 
-import vercel from '@astrojs/vercel';
-
-// https://astro.build/config
+// Keystatic integration only for development
+// For production, we build static site without Keystatic admin
 export default defineConfig({
-  integrations: [
-    react(),
-    markdoc(),
-    keystatic()
-  ],
-
-  output: 'server',
-  adapter: vercel(),
+  integrations: [react(), markdoc()],
+  output: 'static',
 });
