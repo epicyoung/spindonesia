@@ -8,9 +8,6 @@ export default config({
       name: 'spindonesia',
     },
   },
-  cloud: {
-    project: 'spindonesia/spindonesia',
-  },
   collections: {
     posts: collection({
       label: 'Blog Posts',

@@ -346,9 +346,6 @@ const config = config$1({
       name: "spindonesia"
     }
   },
-  cloud: {
-    project: "spindonesia/spindonesia"
-  },
   collections: {
     posts: collection({
       label: "Blog Posts",
