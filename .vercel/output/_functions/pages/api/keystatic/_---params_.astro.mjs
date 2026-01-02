@@ -341,7 +341,13 @@ function tryOrUndefined(fn) {
 const config = config$1({
   storage: {
     kind: "github",
-    repo: "epicyoung/spindonesia"
+    repo: {
+      owner: "epicyoung",
+      name: "spindonesia"
+    }
+  },
+  cloud: {
+    project: "spindonesia/spindonesia"
   },
   collections: {
     posts: collection({

@@ -3,7 +3,13 @@ import { config, fields, collection } from '@keystatic/core';
 export default config({
   storage: {
     kind: 'github',
-    repo: 'epicyoung/spindonesia',
+    repo: {
+      owner: 'epicyoung',
+      name: 'spindonesia',
+    },
+  },
+  cloud: {
+    project: 'spindonesia/spindonesia',
   },
   collections: {
     posts: collection({
